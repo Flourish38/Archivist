@@ -22,6 +22,7 @@ public abstract class BotConfig {
         File file = new File("config.txt");
         if(!file.exists()){
             create(file);
+            System.out.println("Created file \"config.txt\". Be sure to put the token in the file!");
             return false;
         }
         Scanner scanner;
